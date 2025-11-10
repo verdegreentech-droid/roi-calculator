@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>VerdeGrow Tech ROI Calculator</h1>
+        <div class="input-section">
+            <label for="investment">Investment Amount ($):</label>
+            <input type="number" id="investment" placeholder="Enter amount">
+            
+            <label for="facilities">Select Facility Count:</label>
+            <select id="facilities">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="30">30</option>
+                <option value="50">50</option>
+                <option value="150">150</option>
+            </select>
+        </div>
+        <div class="results">
+            <div class="result-card">
+                <h2>HydroVerde ROI</h2>
+                <p>Stock ROI: $<span id="hv-stock">0</span></p>
+                <p>Profit Share: $<span id="hv-profit">0</span></p>
+                <p>Hybrid ROI: $<span id="hv-hybrid">0</span></p>
+            </div>
+            <div class="result-card">
+                <h2>Verdant Rise ROI</h2>
+                <p>Stock ROI: $<span id="vr-stock">0</span></p>
+                <p>Profit Share: $<span id="vr-profit">0</span></p>
+                <p>Hybrid ROI: $<span id="vr-hybrid">0</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
