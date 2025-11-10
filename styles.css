@@ -1,0 +1,140 @@
+/* Base + brand background */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4CAF50, #2196F3); /* Green → Blue */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container with modular transparency for overlays */
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* Title with gold accent */
+h1 {
+  text-align: center;
+  color: #FFD700; /* Gold */
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  margin-top: 0;
+}
+
+/* Inputs */
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+label {
+  font-weight: bold;
+  color: #333;
+}
+
+input, select {
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #4CAF50;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.85);
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+button {
+  padding: 12px 18px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Calculate button with gradient */
+#calculateBtn {
+  background: linear-gradient(90deg, #4CAF50, #2196F3);
+  color: #fff;
+}
+#calculateBtn:hover { opacity: 0.92; }
+
+/* Reset button */
+#resetBtn {
+  background: #f44336;
+  color: #fff;
+}
+#resetBtn:hover { opacity: 0.92; }
+
+/* Results grid */
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.result-card {
+  flex: 1 1 calc(50% - 20px);
+  background: rgba(255, 255, 255, 0.85);
+  border: 2px solid #FFD700; /* Gold border */
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+
+.result-card h2 {
+  color: #4CAF50;
+  margin: 0 0 10px 0;
+}
+
+/* Summary line with gold */
+#summary {
+  margin-top: 16px;
+  font-weight: bold;
+  color: #FFD700;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Progress bar styled with brand palette */
+.progress-container {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  margin-top: 20px;
+  height: 28px;
+  overflow: hidden;
+  box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #4CAF50, #2196F3); /* Green → Blue */
+  border-right: 3px solid #FFD700; /* Gold edge */
+  text-align: center;
+  line-height: 28px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  transition: width 0.6s ease-in-out;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .result-card {
+    flex: 1 1 100%;
+  }
+}
